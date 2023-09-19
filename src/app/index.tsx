@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routing } from 'pages';
 import './index.scss';
+import { withProviders } from './providers';
 
 function App() {
 	return (
@@ -10,4 +11,4 @@ function App() {
 	);
 }
 
-export default App;
+export default () => withProviders(App);
