@@ -54,11 +54,19 @@ module.exports = {
 						group: 'internal',
 					},
 					{
+						pattern: 'pages',
+						group: 'internal',
+					},
+					{
 						pattern: 'pages/**',
 						group: 'internal',
 					},
 					{
-						pattern: 'shared/**',
+						pattern: 'shared/config',
+						group: 'internal',
+					},
+					{
+						pattern: 'shared/ui',
 						group: 'internal',
 					},
 					{
