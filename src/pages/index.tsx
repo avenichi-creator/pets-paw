@@ -15,12 +15,17 @@ import { VotingPage } from './voting-page';
 
 const router = createBrowserRouter([
 	{
-		element: <Layout />,
+		element: <Layout isInlineAside={true} />,
 		children: [
 			{
 				path: Routes.homePage,
 				element: <HomePage />,
 			},
+		],
+	},
+	{
+		element: <Layout />,
+		children: [
 			{
 				path: Routes.breedPage,
 				element: <BreedPage />,

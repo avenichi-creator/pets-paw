@@ -1,2 +1,61 @@
 :root {
+	// paddings
+	--main-padding: 30px;
+
+	@media (width <=425px) {
+		// paddings
+		--main-padding: 20px;
+	}
+}
+
+:root[data-theme='light'] {
+	// background
+	--main-bg: #f8f8f7;
+	--main-block-bg: #ffffff;
+
+	// text
+	--main-text-color: #1d1d1d;
+	--secondary-text-color: #8c8c8c;
+
+	// home page
+	--homepage-decoration-bg: #fbe0dc;
+
+	// sidebar
+	--first-link-bg: #b4b7ff;
+	--second-link-bg: #97eab9;
+	--third-link-bg: #ffd280;
+
+	// interactable components
+	--default-state-bg: #ffffff;
+	--hover-state-bg: #fbe0dc;
+	--active-state-bg: #ff868e;
+	--default-state-text-color: #ff868e;
+	--hover-state-text-color: #ff868e;
+	--active-state-text-color: #ffffff;
+}
+
+:root[data-theme='dark'] {
+	// background
+	--main-bg: #1d1d1d;
+	--main-block-bg: #ffffff0d;
+
+	// text
+	--main-text-color: #ffffff;
+	--secondary-text-color: #8c8c8c;
+
+	// home page
+	--homepage-decoration-bg: #ffffff0d;
+
+	// sidebar
+	--first-link-bg: #b4b7ff;
+	--second-link-bg: #97eab9;
+	--third-link-bg: #ffd280;
+
+	// interactable components
+	--default-state-bg: #ffffff0d;
+	--hover-state-bg: #fbe0dc;
+	--active-state-bg: #ff868e;
+	--default-state-text-color: #ff868e;
+	--hover-state-text-color: #ff868e;
+	--active-state-text-color: #ffffff;
 }

@@ -1,0 +1,22 @@
+.home-page {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.home-page-img-wrapper {
+	position: relative;
+	flex-grow: 1;
+	border-radius: 20px;
+	background-color: var(--homepage-decoration-bg);
+}
+
+.home-page-img {
+	position: absolute;
+	top: calc(-1 * var(--main-padding));
+	right: calc(-1 * var(--main-padding));
+	width: calc(100% + 65px + var(--main-padding));
+	height: calc(100% + var(--main-padding) * 2);
+	object-fit: cover;
+	object-position: center;
+}

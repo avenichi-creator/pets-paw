@@ -8,7 +8,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:import/typescript',
 		'plugin:prettier/recommended',
 	],
 	parser: '@typescript-eslint/parser',
@@ -21,7 +20,7 @@ module.exports = {
 			version: 'detect',
 		},
 	},
-	plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
+	plugins: ['react', '@typescript-eslint', 'prettier'],
 	rules: {
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'windows'],
@@ -34,51 +33,6 @@ module.exports = {
 			{
 				ignoreCase: true,
 				ignoreDeclarationSort: true,
-			},
-		],
-		'import/order': [
-			'warn',
-			{
-				groups: ['external', 'internal', 'sibling', 'parent'],
-				pathGroups: [
-					{
-						pattern: 'app',
-						group: 'internal',
-					},
-					{
-						pattern: 'entities/**',
-						group: 'internal',
-					},
-					{
-						pattern: 'features/**',
-						group: 'internal',
-					},
-					{
-						pattern: 'pages',
-						group: 'internal',
-					},
-					{
-						pattern: 'pages/**',
-						group: 'internal',
-					},
-					{
-						pattern: 'shared/config',
-						group: 'internal',
-					},
-					{
-						pattern: 'shared/ui',
-						group: 'internal',
-					},
-					{
-						pattern: 'widgets/**',
-						group: 'internal',
-					},
-				],
-				pathGroupsExcludedImportTypes: ['internal'],
-				alphabetize: {
-					order: 'asc',
-					caseInsensitive: true,
-				},
 			},
 		],
 	},
