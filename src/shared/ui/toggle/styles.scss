@@ -1,0 +1,33 @@
+.toggle {
+	position: relative;
+	display: block;
+	width: 44px;
+	height: 24px;
+	border-radius: 20px;
+	background-color: var(--hover-state-bg);
+	cursor: pointer;
+
+	input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+}
+
+.toggle::after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin: 3px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: var(--active-state-bg);
+	transition: all 0.2s linear;
+}
+
+.toggle.active::after {
+	left: calc(100% - 24px);
+}

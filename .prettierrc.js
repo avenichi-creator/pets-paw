@@ -16,8 +16,7 @@ module.exports = {
 		'^pages(/.*|$)',
 		'^shared(/.*|$)',
 		'^widgets(/.*|$)',
-		'^(./.+)',
-		'^(../.+)',
+		'^[./]',
 	],
 	importOrderSeparation: false,
 };

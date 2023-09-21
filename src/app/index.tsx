@@ -11,4 +11,4 @@ function App() {
 	);
 }
 
-export default () => withProviders(App);
+export default withProviders(App);

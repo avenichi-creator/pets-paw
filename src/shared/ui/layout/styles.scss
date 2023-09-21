@@ -1,0 +1,26 @@
+.layout {
+	display: flex;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: var(--main-padding);
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--main-bg);
+
+	@media (width > 425px) {
+		padding: 30px;
+	}
+}
+
+.layout-aside {
+	flex-grow: 1;
+}
+
+.layout-main {
+	width: 100%;
+
+	@media (width >=1440px) {
+		flex-shrink: 1;
+		width: 680px;
+	}
+}

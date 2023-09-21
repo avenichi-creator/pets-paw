@@ -1,1 +1,12 @@
 @use './styles/index.scss';
+
+body {
+	font-family: Jost;
+	font-size: 16px;
+	color: var(--main-text-color);
+
+	a {
+		color: var(--main-text-color);
+		text-decoration: none;
+	}
+}
