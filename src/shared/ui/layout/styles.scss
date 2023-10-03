@@ -1,6 +1,6 @@
 .layout {
 	display: flex;
-	overflow: hidden;
+	overflow: visible;
 	box-sizing: border-box;
 	padding: var(--main-padding);
 	height: 100vh;
@@ -16,11 +16,18 @@
 	flex-grow: 1;
 }
 
-.layout-main {
+.layout-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	width: 100%;
 
 	@media (width >=1440px) {
-		flex-shrink: 1;
 		width: 680px;
 	}
+}
+
+.layout-main {
+	flex-grow: 1;
+	overflow: hidden;
 }

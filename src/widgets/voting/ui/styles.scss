@@ -1,0 +1,9 @@
+.voting-widget {
+	flex-grow: 1;
+	width: calc(100%);
+	padding-right: 10px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}

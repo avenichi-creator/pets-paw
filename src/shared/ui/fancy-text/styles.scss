@@ -1,0 +1,12 @@
+.fancy-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: var(--active-state-bg);
+	color: var(--active-state-text-color);
+	font-size: 20px;
+	font-weight: 500;
+}

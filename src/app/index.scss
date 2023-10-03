@@ -10,3 +10,21 @@ body {
 		text-decoration: none;
 	}
 }
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background: var(--scroll-track-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: var(--scroll-thumb-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--scroll-thumb-bg-hover);
+}

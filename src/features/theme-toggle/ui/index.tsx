@@ -27,7 +27,7 @@ export function ThemeToggle() {
 			</div>
 			<Toggle
 				className="theme-toggle-toggler"
-				isActive={true}
+				isActive={isLightTheme}
 				onChange={(isChecked) => setIsLightTheme(isChecked)}
 			/>
 		</div>

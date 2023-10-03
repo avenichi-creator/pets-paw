@@ -1,0 +1,14 @@
+.back-button {
+	background-color: var(--hover-state-bg);
+	color: var(--hover-state-text-color);
+
+	&:hover {
+		background-color: var(--hover-state-bg);
+		color: var(--hover-state-text-color);
+	}
+
+	&:active {
+		background-color: var(--active-state-bg);
+		color: var(--active-state-text-color);
+	}
+}
