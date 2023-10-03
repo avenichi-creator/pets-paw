@@ -1,0 +1,24 @@
+.voting-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	width: 60px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s linear;
+
+	.icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	@media (width > 425px) {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+.voting-button.disabled {
+	cursor: not-allowed;
+}

@@ -8,7 +8,7 @@
 	}
 }
 
-:root[data-theme='light'] {
+:root {
 	// background
 	--main-bg: #f8f8f7;
 	--main-block-bg: #ffffff;
@@ -32,6 +32,37 @@
 	--default-state-text-color: #ff868e;
 	--hover-state-text-color: #ff868e;
 	--active-state-text-color: #ffffff;
+
+	// popup
+	--popup-bg: #1d1d1d99;
+
+	// voting
+	--voting-bar-bg: #ffffff;
+	--voting-button-1-default-state-bg: #97eab9;
+	--voting-button-2-default-state-bg: #ff868e;
+	--voting-button-3-default-state-bg: #ffd280;
+	--voting-button-1-hover-state-bg: #97eaba4d;
+	--voting-button-2-hover-state-bg: #ff868e4d;
+	--voting-button-3-hover-state-bg: #ffd2804d;
+	--voting-button-default-state-text: #ffffff;
+	--voting-button-1-hover-state-text: #97eab9;
+	--voting-button-2-hover-state-text: #ff868e;
+	--voting-button-3-hover-state-text: #ffd280;
+
+	// log
+	--log-bg: #f8f8f7;
+	--log-time-bg: #ffffff;
+	--like-icon-color: #97eab9;
+	--fav-icon-color: #ff868e;
+	--dislike-icon-color: #ffd280;
+
+	// load-screen
+	--load-screen-bg: #f8f8f7;
+
+	// scroll
+	--scroll-track-bg: #f8f8f7;
+	--scroll-thumb-bg: #ff868e;
+	--scroll-thumb-bg-hover: #ff868ebb;
 }
 
 :root[data-theme='dark'] {
@@ -53,9 +84,36 @@
 
 	// interactable components
 	--default-state-bg: #ffffff0d;
-	--hover-state-bg: #fbe0dc;
+	--hover-state-bg: #ff868e33;
 	--active-state-bg: #ff868e;
 	--default-state-text-color: #ff868e;
 	--hover-state-text-color: #ff868e;
 	--active-state-text-color: #ffffff;
+
+	// popup
+	--popup-bg: #1d1d1d99;
+
+	// voting
+	--voting-bar-bg: #282828;
+	--voting-button-1-default-state-bg: #97eab9;
+	--voting-button-2-default-state-bg: #ff868e;
+	--voting-button-3-default-state-bg: #ffd280;
+	--voting-button-1-hover-state-bg: #97eaba4d;
+	--voting-button-2-hover-state-bg: #ff868e4d;
+	--voting-button-3-hover-state-bg: #ffd2804d;
+	--voting-button-default-state-text: #ffffff;
+	--voting-button-1-hover-state-text: #97eab9;
+	--voting-button-2-hover-state-text: #ff868e;
+	--voting-button-3-hover-state-text: #ffd280;
+
+	// log
+	--log-bg: #f8f8f70d;
+	--log-time-bg: #1d1d1d;
+	--like-icon-color: #97eab9;
+	--fav-icon-color: #ff868e;
+	--dislike-icon-color: #ffd280;
+
+	// load-screen
+	--load-screen-bg: #1d1d1d;
+	--load-circle-color: #ff868e;
 }

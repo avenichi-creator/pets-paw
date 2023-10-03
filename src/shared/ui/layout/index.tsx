@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Layout as ScreenLayout } from 'shared/config/layout';
 import { useWindowSize } from 'shared/lib/window-size';
 import { InlineAside, PopupAside } from 'shared/ui/aside';
+import { Header } from 'widgets/header';
 import './styles.scss';
 
 interface LayoutProps {
@@ -14,17 +15,20 @@ export function Layout(props: LayoutProps) {
 
 	const { width } = useWindowSize();
 
-	const isMainVisible = !isInlineAside || (isInlineAside && width >= ScreenLayout.desktop);
+	const isContentVisible = !isInlineAside || (isInlineAside && width >= ScreenLayout.desktop);
 
 	return (
 		<div className="layout">
 			<div className="layout-aside">
 				{isInlineAside || width >= ScreenLayout.desktop ? <InlineAside /> : <PopupAside />}
 			</div>
-			{isMainVisible && (
-				<main className="layout-main">
-					<Outlet />
-				</main>
+			{isContentVisible && (
+				<div className="layout-content">
+					{!isInlineAside && <Header />}
+					<main className="layout-main">
+						<Outlet />
+					</main>
+				</div>
 			)}
 		</div>
 	);

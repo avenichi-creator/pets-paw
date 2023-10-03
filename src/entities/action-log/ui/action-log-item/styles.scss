@@ -1,0 +1,69 @@
+.action-log-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: var(--log-bg);
+
+	@media (width <=425px) {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		gap: 10px;
+	}
+
+	time {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 30px;
+		border-radius: 5px;
+		background-color: var(--log-time-bg);
+
+		@media (width <=425px) {
+			grid-column: 1/1;
+			grid-row: 1/1;
+		}
+	}
+
+	span {
+		flex-grow: 1;
+		line-height: 24px;
+		color: var(--secondary-text-color);
+
+		@media (width <=425px) {
+			grid-column: 1/-1;
+			grid-row: 2/-1;
+		}
+	}
+
+	strong {
+		color: var(--main-text-color);
+		font-weight: 500;
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+
+		@media (width <=425px) {
+			grid-column: 2/-1;
+			grid-row: 1/1;
+			justify-self: end;
+		}
+	}
+
+	.like-icon .icon-fill {
+		fill: var(--like-icon-color);
+	}
+
+	.fav-icon .icon-fill {
+		fill: var(--fav-icon-color);
+	}
+
+	.dislike-icon .icon-fill {
+		fill: var(--dislike-icon-color);
+	}
+}

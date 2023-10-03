@@ -53,7 +53,8 @@
 	}
 }
 
-.nav-card:active {
+.nav-card:active,
+.nav-card.active {
 	.nav-card-title {
 		background-color: var(--active-state-bg);
 		color: var(--active-state-text-color);

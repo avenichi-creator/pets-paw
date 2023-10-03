@@ -1,0 +1,36 @@
+.header-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+	background-color: var(--default-state-bg);
+	transition: all 0.2s linear;
+
+	.icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.icon-fill {
+		fill: var(--default-state-text-color);
+	}
+}
+
+.header-link:hover {
+	background-color: var(--hover-state-bg);
+
+	.icon-fill {
+		fill: var(--hover-state-text-color);
+	}
+}
+
+.header-link:active,
+.header-link.active {
+	background-color: var(--active-state-bg);
+
+	.icon-fill {
+		fill: var(--active-state-text-color);
+	}
+}

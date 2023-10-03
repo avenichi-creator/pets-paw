@@ -1,0 +1,94 @@
+.voting {
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.voting-img-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 360px;
+	border-radius: 20px;
+	background-color: var(--log-bg);
+
+	@media (width <=425px) {
+		height: 200px;
+	}
+
+	.load-screen {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.voting-img {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: contain;
+}
+
+.voting-bar-wrapper {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.voting-bar {
+	display: flex;
+	gap: 4px;
+	overflow: hidden;
+	padding: 4px;
+	border-radius: 20px;
+	background-color: var(--voting-bar-bg);
+
+	.voting-button .icon-fill {
+		fill: var(--voting-button-default-state-text);
+	}
+
+	.voting-button:nth-child(1) {
+		border-radius: 20px 0 0 20px;
+		background-color: var(--voting-button-1-default-state-bg);
+
+		&:hover {
+			background-color: var(--voting-button-1-hover-state-bg);
+
+			.icon-fill {
+				fill: var(--voting-button-1-hover-state-text);
+			}
+		}
+	}
+
+	.voting-button:nth-child(2) {
+		background-color: var(--voting-button-2-default-state-bg);
+
+		&:hover {
+			background-color: var(--voting-button-2-hover-state-bg);
+
+			.icon-fill {
+				fill: var(--voting-button-2-hover-state-text);
+			}
+		}
+	}
+
+	.voting-button:nth-child(3) {
+		border-radius: 0 20px 20px 0;
+		background-color: var(--voting-button-3-default-state-bg);
+
+		&:hover {
+			background-color: var(--voting-button-3-hover-state-bg);
+
+			.icon-fill {
+				fill: var(--voting-button-3-hover-state-text);
+			}
+		}
+	}
+}

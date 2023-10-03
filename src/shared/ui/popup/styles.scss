@@ -1,0 +1,58 @@
+.popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.popup-bg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background-color: var(--popup-bg);
+	transition: all 0.4s ease-in-out;
+}
+
+.popup.open .popup-bg {
+	opacity: 1;
+}
+
+.popup-body {
+	position: fixed;
+	top: 100%;
+	bottom: -100%;
+	left: 0;
+	right: 0;
+	background-color: var(--main-bg);
+	transition: all 0.4s ease-in-out;
+
+	@media (width >=1440px) {
+		left: unset;
+		right: var(--main-padding);
+		width: 680px;
+		border-radius: 20px;
+	}
+}
+
+.popup.open .popup-body {
+	top: 0;
+	bottom: 0;
+
+	@media (width >=1440px) {
+		top: var(--main-padding);
+		bottom: var(--main-padding);
+	}
+}
+
+.popup-content {
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+}

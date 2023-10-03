@@ -1,0 +1,17 @@
+.voting-page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: var(--main-block-bg);
+}
+
+.voting-page-header {
+	display: flex;
+	gap: 10px;
+}

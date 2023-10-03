@@ -1,0 +1,52 @@
+.icon-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--default-state-bg);
+	transition: all 0.2s linear;
+	border: none;
+	cursor: pointer;
+
+	.icon-fill {
+		fill: var(--default-state-text-color);
+		transition: all 0.2s linear;
+	}
+
+	&:hover {
+		background-color: var(--hover-state-bg);
+
+		.icon-fill {
+			fill: var(--hover-state-text-color);
+		}
+	}
+
+	&:active {
+		background-color: var(--active-state-bg);
+
+		.icon-fill {
+			fill: var(--active-state-text-color);
+		}
+	}
+}
+
+.icon-button.normal {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.icon-button.large {
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+
+	.icon {
+		width: 30px;
+		height: 30px;
+	}
+}

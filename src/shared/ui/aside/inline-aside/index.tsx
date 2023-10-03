@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ThemeToggle } from 'features/theme-toggle';
+import { Link, useLocation } from 'react-router-dom';
+import { ThemeToggle } from 'features/theme-toggle/ui';
 import { NavData } from 'shared/config/nav-data';
 import { Routes } from 'shared/config/routes';
 import { Icon } from 'shared/ui/icon';
@@ -8,6 +8,8 @@ import { NavCard } from '../nav-card';
 import './styles.scss';
 
 export function InlineAside() {
+	const location = useLocation();
+
 	return (
 		<aside className="aside-inline">
 			<Link to={Routes.homePage} className="aside-logo">
@@ -22,7 +24,7 @@ export function InlineAside() {
 			</div>
 			<nav className="aside-nav">
 				{NavData.map((item, index) => (
-					<NavCard key={index} {...item} />
+					<NavCard key={index} {...item} isActive={location.pathname === item.path} />
 				))}
 			</nav>
 		</aside>
