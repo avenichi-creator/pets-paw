@@ -1,0 +1,24 @@
+.upload-popup-result-message {
+	box-sizing: border-box;
+	padding: 20px 20px;
+	min-height: 60px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: var(--dropzone-message-bg);
+	color: var(--secondary-text-color);
+
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+}
+
+.upload-popup-result-message.success .icon-fill {
+	fill: var(--dropzone-message-icon-success);
+}
+
+.upload-popup-result-message.error .icon-fill {
+	fill: var(--dropzone-message-icon-error);
+}

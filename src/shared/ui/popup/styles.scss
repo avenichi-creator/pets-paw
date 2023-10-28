@@ -28,7 +28,7 @@
 	bottom: -100%;
 	left: 0;
 	right: 0;
-	background-color: var(--main-bg);
+	background-color: var(--popup-content-bg);
 	transition: all 0.4s ease-in-out;
 
 	@media (width >=1440px) {
@@ -49,8 +49,11 @@
 	}
 }
 
-.popup-content {
+.popup-content-wrapper {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 	box-sizing: border-box;
 	padding: 20px;
 	height: 100%;

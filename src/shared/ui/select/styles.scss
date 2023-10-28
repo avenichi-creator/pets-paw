@@ -1,0 +1,10 @@
+.select {
+	position: relative;
+	height: 40px;
+}
+
+.select.active {
+	.select-field .icon {
+		transform: rotate(180deg);
+	}
+}
