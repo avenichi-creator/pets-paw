@@ -1,0 +1,41 @@
+.text-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 0 30px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: var(--text-button-text);
+	background-color: var(--text-button-bg);
+	transition: all 0.2s linear;
+	cursor: pointer;
+
+	.icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.icon-fill {
+		fill: var(--text-button-text);
+		transition: all 0.2s linear;
+	}
+
+	&:hover,
+	&:active {
+		background-color: var(--text-button-bg-hover);
+		color: var(--text-button-text-hover);
+
+		.icon-fill {
+			fill: var(--text-button-text-hover);
+		}
+	}
+
+	.load-screen {
+		background-color: transparent;
+	}
+}

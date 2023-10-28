@@ -1,0 +1,12 @@
+.filter-order {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-order-label {
+	padding: 0 10px;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 18px;
+	color: var(--secondary-text-color);
+}

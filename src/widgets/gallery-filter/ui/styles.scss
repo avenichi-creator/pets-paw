@@ -1,0 +1,36 @@
+.gallery-filter {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: var(--gallery-filter-widget-bg);
+
+	@media (width > 425px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 10px 20px;
+		padding: 20px;
+	}
+
+	.filter-order {
+		grid-column: 1/1;
+		grid-row: 1/1;
+	}
+
+	.filter-type {
+		grid-column: 2/-1;
+		grid-row: 1/1;
+	}
+
+	.filter-breed {
+		grid-column: 1/1;
+		grid-row: 2/-1;
+	}
+
+	.filter-limit {
+		grid-column: 2/-1;
+		grid-row: 2/-1;
+	}
+}

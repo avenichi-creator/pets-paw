@@ -1,0 +1,12 @@
+.filter-breed {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-breed-label {
+	padding: 0 10px;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 18px;
+	color: var(--secondary-text-color);
+}

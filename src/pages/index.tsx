@@ -15,7 +15,7 @@ import { VotingPage } from './voting-page';
 
 const router = createBrowserRouter([
 	{
-		element: <Layout isInlineAside={true} />,
+		element: <Layout isInlineAside={true} className="home-page-layout" />,
 		children: [
 			{
 				path: Routes.homePage,

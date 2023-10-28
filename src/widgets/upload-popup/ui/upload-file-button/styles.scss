@@ -1,0 +1,10 @@
+.upload-popup-upload-button {
+	background-color: var(--dropzone-upload-bg);
+	color: var(--dropzone-upload-text);
+}
+
+.upload-popup-upload-button:hover,
+.upload-popup-upload-button:active {
+	background-color: var(--dropzone-upload-bg-hover);
+	color: var(--dropzone-upload-text-hover);
+}

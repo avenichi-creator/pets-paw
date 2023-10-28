@@ -16,6 +16,7 @@
 	// text
 	--main-text-color: #1d1d1d;
 	--secondary-text-color: #8c8c8c;
+	--link-text-color: #ff868e;
 
 	// home page
 	--homepage-decoration-bg: #fbe0dc;
@@ -35,6 +36,7 @@
 
 	// popup
 	--popup-bg: #1d1d1d99;
+	--popup-content-bg: #f8f8f7;
 
 	// voting
 	--voting-bar-bg: #ffffff;
@@ -63,6 +65,41 @@
 	--scroll-track-bg: #f8f8f7;
 	--scroll-thumb-bg: #ff868e;
 	--scroll-thumb-bg-hover: #ff868ebb;
+
+	// select
+	--select-bg: #ffffff;
+	--select-text: #1d1d1d;
+	--select-hover-border: #fbe0dc;
+	--select-list-item-hover: #fbe0dc;
+
+	// gallery
+	--gallery-filter-widget-bg: #f8f8f7;
+	--gallery-image-bg: #ff868e99;
+	--gallery-image-button-bg: #ffffff;
+	--gallery-image-button-bg-hover: #fbe0dc;
+	--gallery-image-button-bg-active: #ff868e;
+	--gallery-image-button-text: #ff868e;
+	--gallery-image-button-text-hover: #ff868e;
+	--gallery-image-button-text-active: #ffffff;
+
+	// text button
+	--text-button-bg: #fbe0dc;
+	--text-button-text: #ff868e;
+	--text-button-bg-hover: #ff868e;
+	--text-button-text-hover: #ffffff;
+
+	// dropzone
+	--dropzone-border: #fbe0dc;
+	--dropzone-bg: #ffffff;
+	--dropzone-upload-bg: #ff868e;
+	--dropzone-bg-active: #fbe0dc;
+	--dropzone-upload-text: #ffffff;
+	--dropzone-upload-text-highlight: #ffffff;
+	--dropzone-upload-bg-hover: #fbe0dc;
+	--dropzone-upload-text-hover: #ff868e;
+	--dropzone-message-bg: #ffffff;
+	--dropzone-message-icon-success: #97eab9;
+	--dropzone-message-icon-error: #ff868e;
 }
 
 :root[data-theme='dark'] {
@@ -92,6 +129,7 @@
 
 	// popup
 	--popup-bg: #1d1d1d99;
+	--popup-content-bg: #282828;
 
 	// voting
 	--voting-bar-bg: #282828;
@@ -116,4 +154,39 @@
 	// load-screen
 	--load-screen-bg: #1d1d1d;
 	--load-circle-color: #ff868e;
+
+	// select
+	--select-bg: #1d1d1d;
+	--select-text: #ffffff;
+	--select-hover-border: #ff868e33;
+	--select-list-item-hover: #ff868e33;
+
+	// gallery
+	--gallery-filter-widget-bg: #ffffff0d;
+	--gallery-image-bg: #ff868e99;
+	--gallery-image-button-bg: #282828;
+	--gallery-image-button-bg-hover: #543c3d;
+	--gallery-image-button-bg-active: #ff868e;
+	--gallery-image-button-text: #ff868e;
+	--gallery-image-button-text-hover: #ff868e;
+	--gallery-image-button-text-active: #ffffff;
+
+	// text button
+	--text-button-bg: #ff868e33;
+	--text-button-text: #ff868e;
+	--text-button-bg-hover: #ff868e;
+	--text-button-text-hover: #ffffff;
+
+	// dropzone
+	--dropzone-border: #ff868e33;
+	--dropzone-bg: #ffffff0d;
+	--dropzone-bg-active: #ff868e33;
+	--dropzone-upload-bg: #ff868e;
+	--dropzone-upload-text: #ffffff;
+	--dropzone-upload-text-highlight: #ffffff;
+	--dropzone-upload-bg-hover: #fbe0dc;
+	--dropzone-upload-text-hover: #ff868e;
+	--dropzone-message-bg: rgba(255, 255, 255, 0.05);
+	--dropzone-message-icon-success: #97eab9;
+	--dropzone-message-icon-error: #ff868e;
 }
