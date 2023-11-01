@@ -2,8 +2,8 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Routes } from 'shared/config/routes';
 import { Layout } from 'shared/ui/layout';
+import { BreedLoader } from 'widgets/breed-view';
 import { BreedPage } from './breed-page';
-import { BreedsPage } from './breeds-page';
 import { DislikesPage } from './dislikes-page';
 import { Error404Page } from './error-404-page';
 import { FavPage } from './fav-page';
@@ -29,10 +29,7 @@ const router = createBrowserRouter([
 			{
 				path: Routes.breedPage,
 				element: <BreedPage />,
-			},
-			{
-				path: Routes.breedsPage,
-				element: <BreedsPage />,
+				loader: BreedLoader,
 			},
 			{
 				path: Routes.dislikesPage,
