@@ -1,8 +1,7 @@
 export const Routes = {
 	homePage: '/',
 	votingPage: '/voting',
-	breedsPage: '/breeds',
-	breedPage: '/breeds/:id',
+	breedPage: '/breed/:breedId',
 	galleryPage: '/gallery',
 	searchPage: '/search/:name',
 	favPage: '/fav',

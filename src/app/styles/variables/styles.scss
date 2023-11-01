@@ -100,6 +100,13 @@
 	--dropzone-message-bg: #ffffff;
 	--dropzone-message-icon-success: #97eab9;
 	--dropzone-message-icon-error: #ff868e;
+
+	// breed
+	--breed-info-name-bg: #ffffff;
+	--breed-info-border: #fbe0dc;
+	--breed-carousel-dot-list-bg: #ffffff;
+	--breed-carousel-dot-bg: #fbe0dc;
+	--breed-carousel-dot-bg-active: #ff868e;
 }
 
 :root[data-theme='dark'] {
@@ -189,4 +196,11 @@
 	--dropzone-message-bg: rgba(255, 255, 255, 0.05);
 	--dropzone-message-icon-success: #97eab9;
 	--dropzone-message-icon-error: #ff868e;
+
+	// breed
+	--breed-info-name-bg: #282828;
+	--breed-info-border: #ff868e33;
+	--breed-carousel-dot-list-bg: #282828;
+	--breed-carousel-dot-bg: #ff868e33;
+	--breed-carousel-dot-bg-active: #ff868e;
 }

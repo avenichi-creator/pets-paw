@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Routes } from 'shared/config/routes';
 import { voteDislike, voteFav, voteLike, voteUnfav } from 'shared/lib/vote';
 import { IconButton } from 'shared/ui/buttons';
 import { Icon } from 'shared/ui/icon';
@@ -75,7 +74,7 @@ export function GalleryImage(props: GalleryImageProps) {
 						<Icon iconVariant="dislike" />
 					</IconButton>
 					{breedName && (
-						<Link className="gallery-image-action-breed" to={Routes.breedPage}>
+						<Link className="gallery-image-action-breed" to={`/breed/${breedId}`}>
 							{breedName}
 						</Link>
 					)}

@@ -1,0 +1,41 @@
+.breed-carousel {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.breed-carousel-img {
+	height: 165px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+
+	@media (width > 425px) {
+		height: 360px;
+	}
+}
+
+.breed-carousel-dots {
+	position: absolute;
+	display: flex;
+	gap: 5px;
+	bottom: -15px;
+	padding: 10px;
+	width: auto;
+	border-radius: 20px 20px 0 0;
+	background-color: var(--breed-carousel-dot-list-bg);
+}
+
+.breed-carousel-dots-item {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--breed-carousel-dot-bg);
+	transition: all 0.2s linear;
+	cursor: pointer;
+
+	&.active {
+		background-color: var(--breed-carousel-dot-bg-active);
+	}
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { TextButton } from 'shared/ui/buttons';
-import { uploadImage } from 'widgets/upload-popup/lib';
 import './styles.scss';
 
 interface UploadFileButtonProps {

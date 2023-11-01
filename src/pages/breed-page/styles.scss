@@ -1,4 +1,4 @@
-.breeds-page {
+.breed-page {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -11,7 +11,18 @@
 	background-color: var(--main-block-bg);
 }
 
-.breeds-page-header {
+.breed-page-header {
 	display: flex;
 	gap: 10px;
+}
+
+.breed-page-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	overflow: auto;
+	width: calc(100% + 10px);
+	padding-right: 10px;
 }
