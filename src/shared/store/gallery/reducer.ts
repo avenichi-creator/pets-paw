@@ -15,9 +15,9 @@ export type FeedItem = {
 	breedId: string | undefined;
 	imgId: string;
 	imgUrl: string;
-	isFav: boolean;
 	isLiked: boolean;
 	isDisliked: boolean;
+	voteId?: number;
 	favId: number | undefined;
 };
 

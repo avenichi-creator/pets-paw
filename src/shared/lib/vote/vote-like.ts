@@ -1,6 +1,10 @@
 import { apiKey } from 'shared/config/api';
 
-export const voteLike = async (imageId: string) => {
+interface voteLikePayload {
+	id: number;
+}
+
+export const voteLike = async (imageId: string): Promise<voteLikePayload> => {
 	const response = await fetch('https://api.thecatapi.com/v1/votes', {
 		method: 'POST',
 		headers: {
@@ -11,7 +15,7 @@ export const voteLike = async (imageId: string) => {
 			image_id: imageId,
 			value: 1,
 		}),
-	});
+	}).then((data) => data.json());
 
-	return response.json();
+	return response;
 };
