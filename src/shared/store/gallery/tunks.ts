@@ -15,6 +15,7 @@ type FeedPayload = {
 };
 
 type VotesPayload = {
+	id: number;
 	image_id: string;
 	value: number;
 };
@@ -113,7 +114,6 @@ export const fetchGalleryFeed = createAsyncThunk('gallery/feed', async (_, { get
 			breedName: item.breeds.length > 0 ? item.breeds[0].name : undefined,
 			imgId: item.id,
 			imgUrl: item.url,
-			isFav: false,
 			isLiked: votesPayload.some((a) => a.image_id === item.id && a.value === 1),
 			isDisliked: votesPayload.some((a) => a.image_id === item.id && a.value === -1),
 			favId: favPayload.find((a) => a.image_id === item.id)?.id,
@@ -174,9 +174,9 @@ export const fetchUpdateGalleryFeed = createAsyncThunk(
 				breedName: item.breeds.length > 0 ? item.breeds[0].name : undefined,
 				imgId: item.id,
 				imgUrl: item.url,
-				isFav: false,
 				isLiked: votesPayload.some((a) => a.image_id === item.id && a.value === 1),
 				isDisliked: votesPayload.some((a) => a.image_id === item.id && a.value === -1),
+				voteId: votesPayload.find((a) => a.image_id === item.id)?.id,
 				favId: favPayload.find((a) => a.image_id === item.id)?.id,
 			};
 		});
