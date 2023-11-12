@@ -3,7 +3,7 @@ export const Routes = {
 	votingPage: '/voting',
 	breedPage: '/breed/:breedId',
 	galleryPage: '/gallery',
-	searchPage: '/search/:name',
+	searchPage: '/search',
 	favPage: '/fav',
 	likesPage: '/likes',
 	dislikesPage: '/dislikes',

@@ -42,18 +42,21 @@ export function Feed(props: FeedProps) {
 
 	return (
 		<section className={clsx('feed', className)}>
-			<ul className="feed-list">
-				{feedItems.map((item, index) => (
-					<FeedItem
-						key={index}
-						isMirrorCluster={(index + 1) % 10 > 5}
-						isLikeButtonVisible={isLikeButtonVisible}
-						isDislikeButtonVisible={isDislikeButtonVisible}
-						isFavButtonVisible={isFavButtonVisible}
-						{...item}
-					/>
-				))}
-			</ul>
+			{feedItems.length > 0 && (
+				<ul className="feed-list">
+					{feedItems.map((item, index) => (
+						<FeedItem
+							key={index}
+							isMirrorCluster={(index + 1) % 10 > 5}
+							isLikeButtonVisible={isLikeButtonVisible}
+							isDislikeButtonVisible={isDislikeButtonVisible}
+							isFavButtonVisible={isFavButtonVisible}
+							{...item}
+						/>
+					))}
+				</ul>
+			)}
+			{feedItems.length === 0 && !isLoading && <p>No result(</p>}
 			<div className="feed-loader" ref={feedRef}>
 				<LoadScreen isActive={isLoading} />
 			</div>

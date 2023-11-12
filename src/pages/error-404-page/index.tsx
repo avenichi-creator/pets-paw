@@ -1,5 +1,5 @@
 import React from 'react';
 
 export function Error404Page() {
-	return <>404</>;
+	return <>page not found</>;
 }
