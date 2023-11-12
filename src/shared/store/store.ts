@@ -5,6 +5,7 @@ import favReducer from './fav/reducer';
 import galleryReducer from './gallery/reducer';
 import likesReducer from './likes/reducer';
 import logReducer from './log/reducer';
+import searchReducer from './search/reducer';
 import themeReducer from './theme/reducer';
 import uploadReducer from './upload/reducer';
 import voteReducer from './vote/reducer';
@@ -17,6 +18,7 @@ const store = configureStore({
 		galleryReducer,
 		likesReducer,
 		logReducer,
+		searchReducer,
 		themeReducer,
 		uploadReducer,
 		voteReducer,
